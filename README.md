@@ -34,14 +34,23 @@ Develop an effective detection system that distinguishes real human faces from A
 
 ## 📊 Datasets
 *Description of the required Datasets*
-## Classification Datastet:
+### Classification Datastet:
   - **Real Images**: Flickr-Faces-HQ (FFHQ)
   - **AI-Generated Images**: Created using multiple text-to-image diffusion models (e.g., Runway ML, Kandinsky)
   - Balanced dataset: 50% real, 50% AI-generated
-
+  - The structure of the classification Dataset : 
+<br>├── train/ <br> 
+│   ├── Real images/     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    # Real face images (70% of total) <br> 
+│   └── AI images/      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      # AI-generated faces (70%) <br> 
+├── val/ <br> 
+│   ├── Real images/     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     # Real faces (15%) <br> 
+│   └── AI images/       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     # AI faces (15%) <br> 
+└── test/ <br> 
+    ├── Real images/   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       # Real faces (15%) <br> 
+    └── AI images/       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     # AI faces (15%) <br>
 
     
-## Object Detection Dataset:
+### Object Detection Dataset:
    - Bounding box annotations for face detection via [Roboflow](https://roboflow.com/)
 
 ## 🛠️ Requirements
