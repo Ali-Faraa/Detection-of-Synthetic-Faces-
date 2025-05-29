@@ -33,7 +33,7 @@ Develop an effective detection system that distinguishes real human faces from A
   
 
 ## 📊 Datasets
-
+*Description of the required Datasets*
 ## Classification Datastet:
   - **Real Images**: Flickr-Faces-HQ (FFHQ)
   - **AI-Generated Images**: Created using multiple text-to-image diffusion models (e.g., Runway ML, Kandinsky)
